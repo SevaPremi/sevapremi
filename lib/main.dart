@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sevapremi/asset_paths.dart';
-import 'package:sevapremi/introduction_page.dart';
-import 'package:sevapremi/splash_screens/splash_screen.dart';
+import 'package:sevapremi/pages/splash_screens/splash_screen.dart';
+import 'package:sevapremi/routes/route_management.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +20,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(),
       home: const SplashScreen(),
+      initialRoute: "/tos_page",
+      onGenerateRoute: RouteManagement().generateRoute,
     );
   }
 }

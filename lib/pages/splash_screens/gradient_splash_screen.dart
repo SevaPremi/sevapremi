@@ -1,7 +1,6 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:sevapremi/introduction_page.dart';
+import 'package:sevapremi/pages/introduction_page.dart';
 
 class GradientSplashScreen extends StatefulWidget {
   const GradientSplashScreen({super.key});

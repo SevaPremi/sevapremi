@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sevapremi/asset_paths.dart';
-import 'package:sevapremi/splash_screens/gradient_splash_screen.dart';
+import 'package:sevapremi/pages/splash_screens/gradient_splash_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

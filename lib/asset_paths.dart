@@ -17,4 +17,10 @@ class Assets {
     "assets/images/carousel/carousel4/carousel4_1.png",
     "assets/images/carousel/carousel4/carousel4_2.png",
   ];
+  static const about_page = [
+    "assets/images/blue_ellipse.png",
+    "assets/images/green_ellipse.png",
+    "assets/images/pink_ellipse.png",
+    "assets/images/faq.png",
+  ];
 }

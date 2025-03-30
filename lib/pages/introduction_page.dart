@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/state_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sevapremi/introduction_pages/first_page.dart';
-import 'package:sevapremi/introduction_pages/fourth_page.dart';
-import 'package:sevapremi/introduction_pages/second_page.dart';
-import 'package:sevapremi/introduction_pages/third_page.dart';
+import 'package:sevapremi/pages/introduction_pages/first_page.dart';
+import 'package:sevapremi/pages/introduction_pages/fourth_page.dart';
+import 'package:sevapremi/pages/introduction_pages/second_page.dart';
+import 'package:sevapremi/pages/introduction_pages/third_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class IntroductionPage extends StatefulWidget {
@@ -83,7 +83,9 @@ class _IntroductionPageState extends State<IntroductionPage> with SingleTickerPr
           ? Align(
               alignment: Alignment(0, 0.83),
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigator.pushNamed(context, "/about_page");
+                  },
                   style: ElevatedButton.styleFrom(
                       fixedSize: Size(320, 44),
                       backgroundColor: Colors.black,
@@ -108,7 +110,7 @@ class BottomBar extends StatefulWidget {
   late AnimationController controller;
   late Animation<double> animation;
 
-  BottomBar({required this.page_controller,required this.animation,required this.controller, Key? key}) : super(key: key);
+  BottomBar({required this.page_controller,required this.animation,required this.controller, super.key});
 
   @override
   _BottomBarState createState() => _BottomBarState();
